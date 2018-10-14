@@ -1,7 +1,8 @@
 APP_NAME=qtermy
 PREFIX=/usr/local
+DATADIR=$(PREFIX)/share
 
-dest="$(DESTDIR)$(PREFIX)/share/$(APP_NAME)/images/emoji"
+dest="$(DESTDIR)$(DATADIR)/$(APP_NAME)/images/emoji"
 
 .PHONY: install
 install:
